@@ -73,11 +73,13 @@ export function BarRaceChart() {
     g.select('.x-axis')
       .transition()
       .duration(500)
+      // @ts-ignore
       .call(d3.axisBottom(x));
 
     g.select('.y-axis')
       .transition()
       .duration(500)
+      // @ts-ignore
       .call(d3.axisLeft(y));
   };
 

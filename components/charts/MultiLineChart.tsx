@@ -83,6 +83,7 @@ export function MultiLineChart() {
               .curve(d3.curveMonotoneX);
             return newLine(d);
           });
+           // @ts-ignore
         g.select(".x-axis").call(d3.axisBottom(newX));
       });
 
